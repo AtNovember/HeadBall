@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+
 
 public class Player: MonoBehaviour
 {
-    public float
-        horialAxis,
-        speed;
+    public float horialAxis, speed;
     private Rigidbody2D rb_player;
     public bool canShoot, grounded;
     public GameObject _ball;
