@@ -23,7 +23,7 @@ public class Player: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horialAxis = Input.GetAxis("Horizontal");
+        // horialAxis = Input.GetAxis("Horizontal");
     }
 
     private void FixedUpdate()
