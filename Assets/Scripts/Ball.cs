@@ -26,6 +26,10 @@ public class Ball : MonoBehaviour
         if(collision.gameObject.tag == "canShootAI") {
             _AI.GetComponent<AI>().canShootAI = true;
         }
+
+        if (collision.gameObject.tag == "canHeadAI"){
+            _AI.GetComponent<AI>().canHeadAI = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -36,6 +40,10 @@ public class Ball : MonoBehaviour
         
         if(collision.gameObject.tag == "canShootAI") {
             _AI.GetComponent<AI>().canShootAI = false;
+        }
+        
+        if (collision.gameObject.tag == "canHeadAI"){
+            _AI.GetComponent<AI>().canHeadAI = false;
         }
     }
 }
