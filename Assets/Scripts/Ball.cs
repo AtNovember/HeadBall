@@ -34,10 +34,19 @@ public class Ball : MonoBehaviour
 
 		if (collision.gameObject.tag == "GoalsRight"){
             Instantiate(goals, new Vector3(0, -2, 0), Quaternion.identity); 
+			if(GameController.instance.isScore == false && GameController.instance.EndMatch == false) {
+				GameController.instance.number_GoalsLeft++;
+				GameController.instance.isScore = true;
+			}
+
         }
 
 		if (collision.gameObject.tag == "GoalsLeft"){
             Instantiate(goals, new Vector3(0, -2, 0), Quaternion.identity); 
+			if(GameController.instance.isScore == false && GameController.instance.EndMatch == false) {
+				GameController.instance.number_GoalsRight++;
+				GameController.instance.isScore = true;
+			}
         }
     }
 
