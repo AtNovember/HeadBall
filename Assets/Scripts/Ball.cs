@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     private GameObject _player, _AI;
+	public GameObject goals; 
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,14 @@ public class Ball : MonoBehaviour
 
         if (collision.gameObject.tag == "canHeadAI"){
             _AI.GetComponent<AI>().canHeadAI = true;
+        }
+
+		if (collision.gameObject.tag == "GoalsRight"){
+            Instantiate(goals, new Vector3(0, -2, 0), Quaternion.identity); 
+        }
+
+		if (collision.gameObject.tag == "GoalsLeft"){
+            Instantiate(goals, new Vector3(0, -2, 0), Quaternion.identity); 
         }
     }
 

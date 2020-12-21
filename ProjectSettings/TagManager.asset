@@ -8,6 +8,8 @@ TagManager:
   - canShootAI
   - AI
   - checkHeadAI
+  - GoalsRight
+  - GoalsLeft
   layers:
   - Default
   - TransparentFX
