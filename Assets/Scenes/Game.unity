@@ -900,8 +900,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 171}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: 118}
+  m_SizeDelta: {x: 100, y: 123.803986}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &438637016
 MonoBehaviour:
@@ -980,8 +980,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: -45.5}
+  m_SizeDelta: {x: 100, y: 123.803986}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &597296354
 GameObject:
@@ -1557,7 +1557,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.5752196
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3188,10 +3188,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   txt_GoalsRight: {fileID: 323779123}
   txt_GoalsLeft: {fileID: 286126869}
+  txt_timeMatch: {fileID: 438637016}
   number_GoalsRight: 0
   number_GoalsLeft: 0
   isScore: 0
   EndMatch: 0
+  timeMatch: 0
 --- !u!1 &1748570300
 GameObject:
   m_ObjectHideFlags: 0
