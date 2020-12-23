@@ -48,11 +48,12 @@ public class GameController : MonoBehaviour{
 	    }		
     }
 
-    public void ContinueMatch(){
-	    StartCoroutine(WaitContinueMatch());
-    }
+    // public void ContinueMatch(){
+	   //  StartCoroutine(WaitContinueMatch());
+    // }
     
-    IEnumerator WaitContinueMatch() {
+    // IEnumerator WaitContinueMatch() {
+    IEnumerator ContinueMatch() {
 	    yield return new WaitForSeconds(2f);
 	    isScore = false;
 	    if (EndMatch == false) {
